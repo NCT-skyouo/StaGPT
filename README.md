@@ -2,12 +2,12 @@
 
 這是一個使用 ChatGPT 模型進行文字轉圖像的工具，它通過一個 HTTP API 提供服務。
 
-使用者可以透過發送特定的指示詞到 ChatGPT 來獲取相應的圖像，
+使用者可以透過發送訊息到 ChatGPT，並讓 ChatGPT 將敘述轉為特定的指示詞以獲取相應的圖像，
 
-該圖像是使用 Huggingface 的 Anything v4.0 模型生成的。
+本專案使用了 Huggingface 的 Anything v4.0 模型。
 
 ## 使用
-本專案提供了一個 HTTP 接口，可以通過以下 URL 進行訪問：
+本專案提供了一個 HTTP 接口，可以通過以下 URL 進行調用圖像生成的功能：
 
 ```http
 GET /gen?parameters
